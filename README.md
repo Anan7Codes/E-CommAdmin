@@ -1,0 +1,1 @@
+The Admin Panel for the ECommerce Template
