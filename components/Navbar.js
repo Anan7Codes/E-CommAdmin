@@ -4,7 +4,7 @@ import {
     Heading,
     Text,
     Icon,
-    IconButton
+    IconButton,
 } from '@chakra-ui/react'
 import {
     FiHome,
