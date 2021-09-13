@@ -4,8 +4,10 @@ import { DeleteIcon } from '@chakra-ui/icons'
 import useSWR from 'swr'
 import deleteCategory from '@/util/deleteCategory'
 
+const fetcher = (...args) => fetch(...args).then(res => res.json())
+
 function CategoryTable() {
-    const fetcher = (...args) => fetch(...args).then(res => res.json())
+    
     const { data, error } = useSWR('/api/productCategory', fetcher)
 
     if (error) return <Heading size="xl">failed to load</Heading>

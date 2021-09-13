@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '@/components/Navbar'
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react"
 import ProductCategories from '@/components/ProductCategories'
+import UploadProduct from '@/components/UploadProduct'
 
 function Products() {
     return (
@@ -17,7 +18,7 @@ function Products() {
                     <p>one!</p>
                     </TabPanel>
                     <TabPanel>
-                    <p>two!</p>
+                        <UploadProduct/>
                     </TabPanel>
                     <TabPanel>
                         <ProductCategories/>
